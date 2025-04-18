@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="landpage.html" class="container-form">
+        <label for="userName">Masukkan Nama : </label>
+        <input type="text" id="userName" placeholder="Masukkan Nama Kamu">
+        <br>
+        <label for="class">Masukkan Kelas : </label>
+        <input type="text" id="class" placeholder="Masukkan Kelas kamu">
+        <br>
+        <button onclick="saveValues()" class="in-button">MASUK</button>
+    </form>
+
+    <script>
+        function saveValues() {
+            const nama = document.getElementById('userName').value;
+            const kelas = document.getElementById('class').value;
+            localStorage.setItem('userName', nama);
+            localStorage.setItem('class', kelas);
+            window.location.href = 'landpage.html';
+        }
+    </script>
+</body>
+</html>
