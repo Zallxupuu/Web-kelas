@@ -6,7 +6,8 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form action="landpage.html" class="container-form">
+    <div class="container"> 
+     <form action="landpage.html" class="container-form">
         <label for="userName">Masukkan Nama : </label>
         <input type="text" id="userName" placeholder="Masukkan Nama Kamu">
         <br>
@@ -14,8 +15,9 @@
         <input type="text" id="class" placeholder="Masukkan Kelas kamu">
         <br>
         <button onclick="saveValues()" class="in-button">MASUK</button>
-    </form>
-
+     </form>
+    </div>
+    
     <script>
         function saveValues() {
             const nama = document.getElementById('userName').value;
