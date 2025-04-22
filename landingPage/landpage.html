@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lp.css">
+    <title>X PPLG 1 Website</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="teks">
+            <h1>KELAS</h1>
+            <h1>X PPLG 1</h1>
+        </div>
+
+        <div class="logo">
+            <img src="../asset/Kelas pplg 1.png" alt="">
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <div class="display">
+        <p id="displayValue"></p>
+        <p id="displayValue2"></p>
+    </div>  
+
+    <div class="marquee">
+        <img src="../asset/WhatsApp Image 2025-04-17 at 17.59.07_82a05862.jpg " alt="">
+        <img src="../asset/WhatsApp Image 2025-04-17 at 17.59.07_82a05862.jpg " alt="">
+        <img src="../asset/WhatsApp Image 2025-04-17 at 17.59.07_82a05862.jpg" alt="">
+        <img src="../asset/WhatsApp Image 2025-04-17 at 17.59.07_82a05862.jpg" alt="">
+    </div>
+
+    <script>
+
+        function addSpaces(value) {
+            return value ? value.replace(/=/g, ' = ') : 'Tidak ada nilai yang diterima.';
+        }
+        const nama = localStorage.getItem('userName');
+        const kelas = localStorage.getItem('class');
+        document.getElementById('displayValue').innerText = `Halo ${addSpaces(nama)}`;
+        document.getElementById('displayValue2').innerText = `Dari kelas ${addSpaces(kelas)}`;
+    </script>
+</body>
+
+</html>

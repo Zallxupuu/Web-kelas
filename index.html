@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
 <body>
-    <div class="container"> 
-     <form action="landpage.html" class="container-form">
-        <label for="userName">Masukkan Nama : </label>
+
+        <img class="logo" src="asset/Kelas pplg 1.png" alt="">
+
+    <form action="landingPage/landpage.html" class="container-form">
+        <div class="header-login">
+            <h2>Input Data</h2>
+        </div>
+        <label for="userName">Masukkan Nama : </label> <br>
         <input type="text" id="userName" placeholder="Masukkan Nama Kamu">
         <br>
-        <label for="class">Masukkan Kelas : </label>
+        <label for="class">Masukkan Kelas : </label><br>
         <input type="text" id="class" placeholder="Masukkan Kelas kamu">
         <br>
         <button onclick="saveValues()" class="in-button">MASUK</button>
-     </form>
-    </div>
-    
+    </form>
+
     <script>
         function saveValues() {
             const nama = document.getElementById('userName').value;
             const kelas = document.getElementById('class').value;
             localStorage.setItem('userName', nama);
             localStorage.setItem('class', kelas);
-            window.location.href = 'landpage.html';
+            window.location.href = 'landingPage/landpage.html';
         }
     </script>
 </body>
