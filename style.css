@@ -38,7 +38,7 @@ body{
 .container-form{
     position: relative;
     border-radius: 8px;
-    box-shadow: 0 1px 4px 2pxrgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     margin: 5em 3em;
     padding: 2em;
